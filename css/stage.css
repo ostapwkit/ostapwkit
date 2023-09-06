@@ -246,12 +246,12 @@
 	}
 	.stage-padding{
 		flex-direction: column;
-		height: 400px;
+		height: 400px !important;
 	}
 }
 @media screen and (max-width: 400px){
 	.stage-padding, .circle-block{
-		height: 440px;
+		height: 440px !important;
 	}
 	.stage-block{
 		height: 140px;
@@ -268,7 +268,7 @@
 }
 @media screen and (max-width: 300px){
 	.stage-padding, .circle-block{
-		height: 440px;
+		height: 440px !important;
 	}
 	.stage-block{
 		height: 140px;
