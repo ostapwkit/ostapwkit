@@ -1,0 +1,309 @@
+.complet{
+	width: 100%;
+	height: auto;
+	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
+  	margin-top: 20px;
+}
+
+.comp-padding{
+	width: 68%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main {
+      font-family: Arial;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .slider {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .slide {
+      width: 32%;
+      height: 320px;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      align-items: center;
+      transition: background-color 0.5s;
+      background: #EDF1F7;
+      color: green;
+      margin: 0 15px;
+      border-radius: 12px;
+      opacity: 0.5;
+    }
+    .slick-center {
+      background: #FFF;
+      opacity: 1;
+    }
+    .opacity-block{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   .opacity{
+    width: 16%;
+    height: 320px;
+    background: #F5F5F5;
+   }
+   .gradient-block{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   .gradient-left{
+    width: 90px;
+    height: 320px;
+    background: linear-gradient(90deg, #F5F5F5 0%, rgba(245, 245, 245, 0.00) 100%);
+   }
+   .gradient-center{
+    width: 28%; 
+    height: 320px;
+   }
+   .gradient-right{
+    width: 90px;
+    height: 320px;
+    background: linear-gradient(-90deg, #F5F5F5 0%, rgba(245, 245, 245, 0.00) 100%);
+   }
+
+    .comp-circle-block {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .circle-button {
+      cursor: pointer;
+    }
+
+    .slide-block{
+    	width: 82%;
+    	height: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-evenly;
+      align-items: flex-start;
+    }
+    .comp-slide-block{
+    	width: 82%;
+    	height: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-evenly;
+      align-items: flex-start;
+    }
+
+    .comp-date, .comp-date2{
+    	font-size: 17px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 149.487%;
+		color: #C4CBD2;
+		margin: 0;
+    }
+    .comp-name, .comp-name2{
+    	font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		color: #373D43;
+		margin: 0;
+		margin-bottom: 10px;
+    }
+    .comp-text, .comp-text2{
+    	font-size: 17px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 149.487%;
+		color: #373D43;
+		margin: 0;
+    }
+    .comp-pod{
+    	width: 100%;
+    	height: auto;
+    	flex-direction: column;
+    	margin-top: 20px;
+    	transition: opacity 0.3s ease-in-out;
+    }
+    .block-comp-pod{
+    	width: 100%;
+    	height: auto;
+    	display: flex;
+    	justify-content: space-evenly;
+    	margin: 10px;
+    }
+    .comp-blck{
+      width: 48%;
+      height: 320px;
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      background: #FFF;
+      border-radius: 12px;
+    }
+    .hidden{
+    	display: none;
+    }
+
+    @media screen and (max-width: 1300px){
+      .opacity{
+        width: 10%;
+      }
+      .gradient-left, .gradient-right{
+        width: 70px;
+      }
+      .gradient-center{
+        width: 50%;
+      }
+      .slide-block{
+        height: 100%;
+      }
+      .comp-slide-block{
+        height: auto;
+      }
+      .comp-text, .comp-text2{
+        height: 60%;
+        font-size: 1.5vw;
+      }
+      .comp-padding{
+        width: 80%;
+      }
+    }
+    @media screen and (max-width: 1000px){
+      .comp-text, .comp-text2{
+        font-size: 1.6vw;
+      }
+      .comp-pod-2{
+        margin-top: 15px;
+      }
+      .comp-slide-block{
+        width: 90%;
+      }
+      .comp-blck{
+        height: 250px;
+      }
+    }
+    @media screen and (max-width: 767.5px){
+      .slide-block{
+        width: 65%;
+        height: 80%;
+      }
+      .slide{
+        height: 280px;
+      }
+      .comp-circle-block{
+        justify-content: space-between;
+      }
+      .circle-button{
+        width: 50px;
+        height: 50px;
+      }
+      .comp-text{
+        font-size: 2vw;
+        height: auto;
+      }
+      .comp-text2{
+        font-size: 1.8vw;
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 700px){
+      .comp-padding{
+        width: 90%;
+      }
+    }
+    @media screen and (max-width: 600px){
+      .slide-block{
+        width: 65%;
+        height: 60%;
+      }
+      .slide{
+        height: 180px;
+      }
+      .comp-blck{
+        height: 180px;
+      }
+      .comp-name{
+        font-size: 2.8vw;
+      }
+      .comp-name2{
+        font-size: 2.6vw;
+      }
+      .comp-date{
+        font-size: 2.5vw;
+      }
+      .comp-date2{
+        font-size: 1.8vw;
+      }
+      .gradient-right, .gradient-left, .gradient-center{
+        height: 180px;
+      }
+      .opacity{
+        height: 180px;
+      }
+    }
+    @media screen and (max-width: 500px){
+      .slide{
+        height: 150px;
+      }
+      .circle-button{
+        width: 35px;
+        height: 35px;
+      }
+      .comp-padding{
+        width: 95%;
+      }
+      .comp-blck{
+        height: 150px;
+      }
+      .gradient-right, .gradient-left, .gradient-center{
+        height: 150px;
+      }
+      .opacity{
+        height: 150px;
+      }
+    }
+    @media screen and (max-width: 350px){
+      .slide{
+        height: 130px;
+      }
+      .circle-button{
+        width: 30px;
+        height: 30px;
+      }
+      .gradient-right, .gradient-left, .gradient-center{
+        height: 130px;
+      }
+      .opacity{
+        height: 130px;
+      }
+    }
+    @media screen and (max-width: 300px){
+      .gradient-block{
+        display: none;
+      }
+    }
